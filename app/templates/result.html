@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generated Music</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Generated Music</h1>
+    </header>
+    <div class="container">
+        <h2>Here is your generated music:</h2>
+        <audio controls>
+            <source src="{{ url_for('static', filename=music_path) }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <br>
+        <a href="{{ url_for('main.index') }}">Upload another file</a>
+    </div>
+</body>
+</html>

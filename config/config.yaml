@@ -1,0 +1,12 @@
+# Configuration file for the Music AI project
+
+# Paths
+model_path: 'model/saved_model.h5'          # Path where the model will be saved
+data_path: 'data/'                         # Path to data directory
+audio_processing:                          # Settings for audio processing
+  sample_rate: 44100                      # Sample rate for audio processing
+  chunk_size: 1024                       # Size of audio chunks
+model_params:                              # Hyperparameters for the model
+  learning_rate: 0.001                    # Learning rate for training
+  epochs: 50                             # Number of training epochs
+  batch_size: 32                         # Batch size for training
